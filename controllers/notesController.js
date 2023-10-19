@@ -120,4 +120,8 @@ module.exports = {
     createNewNote,
     updateNote,
     deleteNote
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aea91902db1aa2a93c2f1915587b98bfec6f83b0
