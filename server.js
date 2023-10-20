@@ -17,31 +17,17 @@ connectDB();
 
 app.use(logger);
 
-<<<<<<< HEAD
 app.use(cors(corsOptions))
 
 app.use(express.json())
 
 app.use(cookieParser())
-=======
-app.use(cors(corsOptions));
-
-app.use(express.json());
-
-app.use(cookieParser());
->>>>>>> aea91902db1aa2a93c2f1915587b98bfec6f83b0
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
-<<<<<<< HEAD
-app.use('/', require('./routes/root'))
-app.use('/users', require('./routes/userRoutes'))
-app.use('/notes', require('./routes/noteRoutes.js'))
-=======
 app.use("/", require("./routes/root"));
 app.use("/users", require("./routes/userRoutes"));
 app.use("/notes", require("./routes/noteRoutes"));
->>>>>>> aea91902db1aa2a93c2f1915587b98bfec6f83b0
 
 app.all("*", (req, res) => {
   res.status(404);
